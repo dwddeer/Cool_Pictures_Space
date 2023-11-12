@@ -34,7 +34,9 @@ gem "jbuilder"
 #mygems#
 gem 'paperclip', '~> 6.1'
 gem 'simple_form'
-
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+gem 'sassc-rails'
+gem 'jquery-rails'
 
 
 
