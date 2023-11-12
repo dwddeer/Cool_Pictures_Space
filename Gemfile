@@ -33,8 +33,7 @@ gem "jbuilder"
 
 #mygems#
 gem 'paperclip', '~> 6.1'
-
-
+gem 'simple_form'
 
 
 
