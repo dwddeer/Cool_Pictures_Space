@@ -13,6 +13,10 @@ class PostsController < ApplicationController
         
     end
 
+    def show
+        @post = Post.find(paramsp[:id])
+    end
+
 private
 
      def post_params

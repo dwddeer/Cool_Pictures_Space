@@ -15,28 +15,54 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+:root {
+    --navcolor: #F266AB;
+    --mainbackground: #3f9494;
+    --postcolor: #c0c0c0;
+    --postoutline: black;
+}
+
 
 /* my_styles */
 body {
-    font-family: 'Pacifico', cursive;
-    background-color: #E9B824;
+    font-family: 'Tahoma', sans-serif;
+    background-color: var(--mainbackground); 
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
-    background-color: #219C90; /* Vibrant Pink */
+    background-color: var(--navcolor); 
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Set the height to 100% */
+}
+
+.navbar-header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 27px; /* Increased font size */
+    transition: background-color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-header a:hover {
-    color: #D83F31;
+    color: #333;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
 }
 
 .navbar-brand {
     color: #fff;
-    font-size: 24px;
+    font-size: 20px; /* Increased font size */
     text-decoration: none;
 }
 
@@ -58,12 +84,14 @@ body {
 .navbar-nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 16px; /* Increased font size */
+    transition: background-color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-  
 .navbar-nav a:hover {
-    color: #EE9322; /* Hover color - change as needed */
+    color: #333;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
 }
 
 .posts-wrapper {
@@ -71,55 +99,55 @@ body {
     margin: 0 auto;
     max-width: 642px;
     width: 100%;
-  }
-  
-  .post {
-    background-color: #fff;
-    border-color: #edeeee;
-    border-style: solid;
-    border-radius: 3px;
-    border-width: 1px;
-    margin-bottom: 60px;
-  }
-  
-  .post-head {
-    height: 64px;
-    padding: 14px 20px;
-    color: #125688;
-    font-size: 15px;
+}
+
+.post {
+    background-color: var(--postcolor); 
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post-head {
+    padding: 20px;
+    color: #000;
+    font-size: 14px;
     line-height: 18px;
-  }
-  
-  .name {
+}
+
+.name {
     display: block;
-  }
-  
-  .image {
-    border-bottom: 1px solid #eeefef;
-    border-top: 1px solid #eeefef;
-  }
-  
-  .caption {
-    padding: 24px 24px;
-    font-size: 15px;
-    line-height: 18px;
-  }
-  
-  .form-wrapper {
+    font-weight: bold;
+}
+
+.image {
+    border-bottom: 1px solid #808080;
+    border-top: 1px solid #808080;
+    overflow: hidden;
+}
+
+.caption {
+    padding: 20px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.form-wrapper {
     width: 60%;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #c0c0c0;
     padding: 40px;
-    border: 1px solid #eeefef;
-    border-radius: 3px;
-  }
-  
-  .edit-links {
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.edit-links {
     margin-top: 20px;
     margin-bottom: 40px;
-  }
+}
 
 .image img {
-  width: 100%; /* Adjust as needed */
-  height: auto;
+    width: 100%;
+    height: auto;
+    // border-radius: 8px;
 }
