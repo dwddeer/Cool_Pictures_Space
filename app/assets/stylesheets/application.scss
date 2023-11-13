@@ -19,23 +19,32 @@
 
 body {
     background-color: #fafafa;
-    font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica,
-        sans-serif;
+    font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
-.navbar-brand {
-    a {
-        color: #125688;
-    }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand a {
+    color: #125688;
 }
 
 .navbar-default {
     background-color: #fff;
     height: 54px;
-    
+
     .navbar-nav li a {
         color: #125688;
+        margin: 0 10px; /* Adjust the margin as needed */
     }
+}
+
+.navbar-nav li {
+    list-style: none;
+    padding: 8px;
 }
 
 .navbar-container {
