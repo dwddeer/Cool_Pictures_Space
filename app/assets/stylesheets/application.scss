@@ -150,4 +150,13 @@ body {
     width: 100%;
     height: auto;
     // border-radius: 8px;
+    max-width: 640px;
+}
+
+.form-group img {
+    max-width: 640px;
+}
+
+.text-center img {
+    max-width: 640px;
 }

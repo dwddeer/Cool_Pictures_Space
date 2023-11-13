@@ -95,6 +95,13 @@ GEM
       reline (>= 0.3.1)
     erubi (1.12.0)
     execjs (2.9.1)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
+    faker (3.2.2)
+      i18n (>= 1.8.11, < 2)
     ffi (1.16.3-x64-mingw-ucrt)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -153,6 +160,7 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
+    placepic (0.1.13)
     psych (5.1.1.1)
       stringio
     public_suffix (5.0.3)
@@ -258,10 +266,13 @@ DEPENDENCIES
   bootstrap-sass (~> 3.4, >= 3.4.1)
   capybara
   debug
+  factory_bot_rails
+  faker
   importmap-rails
   jbuilder
   jquery-rails
   paperclip (~> 6.1)
+  placepic
   puma (~> 5.0)
   rails (~> 7.0.8)
   sassc-rails

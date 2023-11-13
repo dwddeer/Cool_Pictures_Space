@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
-    validates :image, presence: true
     has_one_attached :image
+    validates :image, presence: true
     validate :image_content_type
   
 private
