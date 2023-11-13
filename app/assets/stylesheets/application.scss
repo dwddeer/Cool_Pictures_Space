@@ -15,189 +15,85 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-:root {
-    --navcolor: #F266AB;
-    --navtext: white;
-    --mainbackground: #3f9494;
-    --postcolor: #c0c0c0;
-    --postoutline: black;
-}
 
 
-/* my_styles */
 body {
-    font-family: 'Tahoma', sans-serif;
-    background-color: var(--mainbackground); 
-    color: #000;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar {
-    background-color: var(--navcolor); 
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    
-}
-
-.navbar-header {
-    display: flex;
-    align-items: center;
-    height: 100%; 
-}
-
-.navbar-header a {
-    color: var(--navtext);
-    text-decoration: none;
-    font-size: 27px; /* Increased font size */
-    transition: background-color 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-.navbar-header a:hover {
-    color: #333;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
+    background-color: #fafafa;
+    font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica,
+        sans-serif;
 }
 
 .navbar-brand {
-    color: #fff;
-    font-size: 20px; /* Increased font size */
-    text-decoration: none;
+    a {
+        color: #125688;
+    }
 }
 
-.navbar-menu {
-    display: flex;
+.navbar-default {
+    background-color: #fff;
+    height: 54px;
+    
+    .navbar-nav li a {
+        color: #125688;
+    }
 }
 
-.navbar-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar-nav li {
-    margin: 0 10px;
-}
-
-.navbar-nav a {
-    color: var(--navtext);
-    text-decoration: none;
-    font-size: 16px; /* Increased font size */
-    transition: background-color 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-.navbar-nav a:hover {
-    color: #333;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
+.navbar-container {
+    width: 640px;
+    margin: 0 auto;
 }
 
 .posts-wrapper {
     padding-top: 40px;
     margin: 0 auto;
-    max-width: 640px;
+    max-width: 642px;
     width: 100%;
 }
 
 .post {
-    background-color: var(--postcolor); 
-    border-radius: 8px;
-    margin-bottom: 40px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-color: #edeeee;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    margin-bottom: 60px;
 }
 
 .post-head {
-    padding: 20px;
-    color: #000;
-    font-size: 14px;
+    height: 64px;
+    padding: 14px 20px;
+    color: #125688;
+    font-size: 15px;
     line-height: 18px;
+
+    .thumbnail {}
+
+    .name {
+        display: block;
+    }
 }
 
-.name {
-    display: block;
-    font-weight: bold;
+.image {
+    border-bottom: 1px solid #eeefef;
+    border-top: 1px solid #eeefef;
 }
-
-
 
 .caption {
-    padding: 20px;
-    font-size: 12px;
-    line-height: 16px;
+    padding: 24px 24px;
+    font-size: 15px;
+    line-height: 18px;
 }
 
 .form-wrapper {
     width: 60%;
     margin: 20px auto;
-    background-color: #c0c0c0;
+    background-color: #fff;
     padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #eeefef;
+    border-radius: 3px;
 }
 
 .edit-links {
-    padding-bottom: 25px;
-    color: white;
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .edit-button {
-        padding: 10px 15px;
-        border-radius: 5px;
-        background-color: #EE9322;
-        transition: background-color 0.3s ease;
-        display: inline-block;
-        border: 1px solid #e7850c;
-        cursor: pointer;
-    }
-
-    .delete-button {
-        padding: 10px 15px;
-        border-radius: 5px;
-        background-color: #D83F31;
-        transition: background-color 0.3s ease;
-        display: inline-block;
-        border: 1px solid #f03423;
-        cursor: pointer;
-    }
-}
-
-.edit-button:hover {
-    background-color: #e7850c;
-    border: 1px solid #e7760c
-}
-
-.delete-button:hover {
-    background-color: #f03423;
-    border: 1px solid rgb(216, 44, 28)
-}
-
-.image {
-    border-bottom: 1px solid #808080;
-    border-top: 1px solid #808080;
-    overflow: hidden;
-}
-
-.image img {
-    width: 100%;
-    height: auto;
-    // border-radius: 8px;
-    max-width: 640px;
-    padding-right: 0px;
-}
-
-.form-group img {
-    max-width: 640px;
-}
-
-
-.text-center img {
-    max-width: 640px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
