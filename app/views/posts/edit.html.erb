@@ -5,7 +5,7 @@
 <div class="form-wrapper">
     <%= render 'form' %>
     <div class="text-center edit-links">
-        <div class="delete-button"><%= link_to "Delete Post", post_path(@post), method: :delete, data: { confirm: "Are you sure?", turbo: false } %></div>
-        <div class="edit-button" ><%= link_to "Cancel", posts_path %></div>
+        <%= link_to "Delete Post", post_path(@post), method: :delete, data: { confirm: "Are you sure?", turbo: false }, class: "delete-button" %>
+        <%= link_to "Cancel", posts_path, class: "edit-button" %>
     </div>
 </div>

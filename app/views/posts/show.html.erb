@@ -12,8 +12,8 @@
             <%= @post.caption %>
         </p>
         <div class="text-center edit-links">
-            <div class="edit-button"><%= link_to "Cancel", posts_path %></div>
-            <div class="edit-button"><%= link_to "Edit Post", edit_post_path(@post) %></div>
+            <%= link_to "Cancel", posts_path, class: "edit-button" %>
+            <%= link_to "Edit Post", edit_post_path(@post), class: "edit-button" %>
         </div>
     </div>
 </div>

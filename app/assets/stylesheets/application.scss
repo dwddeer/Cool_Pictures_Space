@@ -26,10 +26,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #edeeee;
+    background-color: #fafafa;
+
+    a:hover {
+        text-decoration: none;
+        color: #09446e;
+        transform: scale(1.1) rotate(5deg);
+    }
+
 }
 
-.navbar-brand a {
+
+
+
+.navbar-header {
     color: #125688;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .navbar-default {
@@ -70,7 +85,7 @@ body {
 
 .post-head {
     height: 64px;
-    padding: 14px 20px;
+    padding: 23px 20px;
     color: #125688;
     font-size: 15px;
     line-height: 18px;
@@ -105,4 +120,50 @@ body {
 .edit-links {
     margin-top: 20px;
     margin-bottom: 40px;
+
+
+    .edit-button {
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #3498db; 
+        border: 1px solid #3498db; 
+        border-radius: 4px;
+        transition: background-color 0.3s ease, color 0.3s ease; 
+    }
+
+    .delete-button {
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #db5534; 
+        border: 1px solid #ca3f1c; 
+        border-radius: 4px;
+        transition: background-color 0.3s ease, color 0.3s ease; 
+    }
+
+    .edit-button:hover {
+        background-color: #2980b9; 
+        color: #fff; 
+    }
+
+    .delete-button:hover {
+        background-color: #ca3f1c;
+    }
+}
+
+
+.center-block img{
+    max-width: 640px;
+}
+
+.text-center img {
+    max-width: 640px;
+}
+
+.alert.succes {
+    margin: auto;
+    background-color: #A7D397;
 }
