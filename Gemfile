@@ -37,7 +37,6 @@ gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'sassc-rails'
 gem 'jquery-rails'
-gem 'faker'
 gem 'factory_bot_rails'
 
 

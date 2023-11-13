@@ -13,21 +13,26 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-header">
-        <%= link_to "CoolPicturesSpace", root_path, class: "navbar-brand" %>
+    <nav>
+      <div class="navbar">
+        <div class="navbar-header">
+          <%= link_to "CoolPicturesSpace", root_path, class: "navbar-brand" %>
+        </div>
+        
+        <div class="navbar-menu">
+          <ul class="navbar-nav">
+            <li><%= link_to "New Post", new_post_path %></li>
+            <li><%= link_to "Login", '#' %></li>
+            <li><%= link_to "Register", '#' %></li>
+          </ul>
+        </div>
       </div>
+    </nav>
       
-      <div class="navbar-menu">
-        <ul class="navbar-nav">
-          <li><%= link_to "New Post", new_post_path %></li>
-          <li><%= link_to "Login", '#' %></li>
-          <li><%= link_to "Register", '#' %></li>
-        </ul>
-      </div>
-    </div>
-    
-    <div>
+    <div class="container">
+        <% flash.each do |name, msg| %>
+          <%= content_tag :div, msg, class: [:alert, alert_for(name)] %>
+        <% end %>
         <%= yield %>
     </div>
   
